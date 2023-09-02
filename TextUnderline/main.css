@@ -1,0 +1,43 @@
+body {
+    background-color: #1e1e1e;
+    color: antiquewhite;
+    font-size: large;
+    font-family: 'PT Serif', serif;
+}
+
+h1 {
+    font-weight: 700;
+}
+
+p {
+    font-weight: 400;
+}
+
+.center-div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.text-underline {
+    color: rgb(255, 86, 142);
+    font-weight: bold;
+    background-image: linear-gradient(90deg, rgb(255, 86, 142), rgb(255, 86, 142));
+    background-size: 0% 2px;
+    background-repeat: no-repeat;
+    transition: background-size 300ms ease;
+}
+
+.text-underline.leftToRight{
+    background-position: left bottom;
+}
+
+.text-underline.rightToLeft{
+    background-position: right bottom;
+}
+
+.text-underline:hover {
+    background-size: 100% 2px;
+    cursor: pointer;
+}
