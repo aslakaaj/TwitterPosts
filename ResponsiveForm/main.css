@@ -1,0 +1,63 @@
+body {
+    background-image: linear-gradient(to bottom right, #ac93f4, #8d73d9);
+    background-attachment: fixed;
+}
+
+.contact-form {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 1rem;
+    display: grid;
+    gap: 0.75rem;
+    grid-template-columns: 1fr 1fr;
+    background-image: linear-gradient(to bottom right, #8463e6, #7552de);
+    background-attachment: fixed;
+    border-radius: 0.5rem;
+    box-shadow: #1e1e1ec4 2px 3px 10px;
+
+}
+
+.form-input{
+    padding: 0 1rem;
+    height: 3rem;
+    border: none;
+    border-radius: 0.5rem;
+    background-image: linear-gradient(to bottom right, #9777f6, #8a64fe);
+    background-attachment: fixed;
+
+    
+    color: white;
+}
+
+::placeholder {
+    color: white;
+    opacity: 0.75;
+}
+
+button {
+    padding: 0 1rem;
+    height: 3rem;
+    border: none;
+    border-radius: 0.5rem;
+    background: #ff17aa;
+    color: white;
+
+    box-shadow: #1e1e1e8a 1px 1px 5px;
+}
+
+@media only screen and (min-width: 550px) {
+
+    .item1 {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+}
+
+@media only screen and (max-width: 549px) {
+    .form-input{
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+}
